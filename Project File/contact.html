@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">CONTACT</h2>
+
+    <div class="row">
+
+      <!-- LEFT SIDE -->
+      <div class="col-md-6">
+        <h5>Location</h5>
+        <p>Paris, France</p>
+
+        <iframe
+          src="https://maps.google.com/maps?q=unesco%20paris&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="300"
+          style="border:0;">
+        </iframe>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+          </div>
+
+          <button class="btn btn-success">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}
