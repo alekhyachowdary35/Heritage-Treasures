@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">UNESCO HERITAGE PROJECT</h2>
+
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p>
+          The UNESCO Heritage Project is dedicated to identifying, protecting, and preserving cultural and natural heritage around the world. Established in 1972, our project aims to promote international collaboration and provide support for the conservation of World Heritage sites.
+
+        </p>
+
+        <p>
+          The project covers a diverse range of sites, including ancient monuments, natural parks, historic cities, and intangible cultural heritage. Our efforts are guided by the principles of sustainable development, ensuring that the preservation of heritage sites contributes to the well-being of surrounding communities.
+
+        </p>
+        <p>Our mission is to safeguard the world's cultural and natural treasures for future generations. We work closely with governments, local communities, and various organizations to ensure that these sites are maintained and protected in accordance with the highest standards.
+</p>
+<p>Join us in our mission to preserve the world's heritage. Together, we can ensure that the beauty, history, and cultural significance of these sites continue to inspire and educate future generations.
+</p>
+      </div>
+
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='about.jpg') }}"
+     class="img-fluid rounded shadow">
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
