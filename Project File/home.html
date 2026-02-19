@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero-section"
+    style="background-image: url('{{ url_for('static', filename='hero.jpg') }}');">
+
+    <div class="hero-overlay">
+        <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold">Welcome to UNESCO Heritage</h1>
+            <p class="lead">
+                Heritage Site Types Analysis across various countries.
+            </p>
+            <a href="/about" class="btn btn-success px-4 mt-3">Read More</a>
+        </div>
+    </div>
+
+</section>
+
+
+{% endblock %}
